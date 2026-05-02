@@ -1,5 +1,12 @@
 const myLibrary = [];
 
+const newBookBtn = document.getElementById('newBookBtn');
+const formContainer = document.getElementById('formContainer');
+
+newBookBtn.addEventListener('click', () => {
+  formContainer.style.display = 'block';
+});
+
 function Book(author, title, genre, pagecount, read) {
   this.author = author;
   this.title = title;
@@ -76,4 +83,5 @@ form.addEventListener('submit', (event) => {
   addBookToLibrary(author, title, genre, pagecount, read);
 
   form.reset();
+  formContainer.style.display = 'none';
 });

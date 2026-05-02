@@ -9,3 +9,17 @@
     display:flex;
     flex-wrap: wrap;
 }
+
+.newbookform{
+    padding:15px;
+    
+}
+
+#Bookform{
+    display:flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: azure;
+}
