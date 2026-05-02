@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     
+    <div class="books">
+
+
+    </div>
+
+
+
+
+    <div class="newbookform">
+        <form  id="bookForm">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+
+                <label for="genre">Genre</label>
+                <input type="text" name="genre" id="genre">
+
+                <label for="pages">Pagecount</label>
+                <input type="number" name="pages" id="pages">
+
+                <p>Read?</p>
+
+                <!-- "Yes" Option -->
+                <input type="radio" id="yesOption" name="read" value="Yes" checked>
+                <label for="yesOption">Yes</label>
+
+                <!-- "No" Option -->
+                <input type="radio" id="noOption" name="read" value="No">
+                <label for="noOption">No</label>
+
+                <button type="submit">Submit</button>
+
+        </form>
+            <div id="output"></div>
+
+
+    </div>
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
